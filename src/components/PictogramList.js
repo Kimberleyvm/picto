@@ -12,8 +12,7 @@ const PictogramList = () => {
             <div className='pictogram-container'>
                 {pictograms.map((pictogram, index) => (
                     <div key={index} className='pictogram-item'>
-                        <img src={`${process.env.PUBLIC_URL}/pictogram/hond.png`} alt={pictogram.name} />
-
+                        <img src={`${process.env.PUBLIC_URL}${pictogram.image}`} alt={pictogram.name} />
                         <span>{pictogram.name}</span>
                     </div>
                 ))}
